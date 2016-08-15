@@ -1,0 +1,25 @@
+{
+  "name": "gabitosoft.com",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "keywords": [
+    "Web",
+    "Projects",
+    "Angular",
+    "Material",
+    "browser"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-gridster": "^0.13.14",
+    "angular-material-data-table": "^0.10.9"
+  }
+}
