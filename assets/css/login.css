@@ -1,0 +1,7 @@
+body {
+  background-color: #22354C; }
+  body .login {
+    color: #465f77;
+    background-color: #22354C; }
+    body .login input {
+      color: #fff; }

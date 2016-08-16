@@ -1,0 +1,14 @@
+body {
+  $background: #22354C;
+  $login-input-color: #fff;
+  $login-label-color: #465f77;
+
+  background-color: $background;
+  .login {
+    color: $login-label-color;
+    background-color: $background;
+    input {
+      color: $login-input-color;
+    }
+  }
+}

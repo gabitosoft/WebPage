@@ -1,6 +1,6 @@
-<div layout-align="center center" layout="column">
-  <img src="assets/img/gabitosoft.png" alt="logo"/>
-  <h4>Welcome to gabitosoft</h4>
+<div layout-align="center center" layout="column" class="login" ng-controller="LoginCtrl">
+  <img src="assets/img/gabitosoft-blank.png" alt="logo"/>
+  <h4>Welcome</h4>
   <div>Login with your User ID</div>
   <md-input-container class="md-block">
     <label>Username</label>
@@ -11,7 +11,7 @@
   </md-input-container>
   <md-input-container class="md-block">
     <label>Password</label>
-    <input required type="text" name="password" ng-model="login.password">
+    <input required type="password" name="password" ng-model="login.password">
     <div ng-messages="login.password.$error">
       <div ng-message="required">This field is required.</div>
     </div>

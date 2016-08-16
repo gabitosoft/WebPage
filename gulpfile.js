@@ -1,15 +1,15 @@
 'use strict';
 
+var gulp    = require('gulp');
+
 /**
 * Gulp task to run the web server and live reload the changes in browser
 *
 * @usage
-*   $ gulp webserver --gulpfile webserver-gulpfile.js
+*   $ gulp webserver --gulpfile gulpfile.js
 */
 
-var gulp    = require('gulp');
-
-var server = require('gulp-server-livereload');
+var server  = require('gulp-server-livereload');
 
 gulp.task('webserver', function() {
     gulp.src('.')
@@ -24,3 +24,22 @@ gulp.task('webserver', function() {
 });
 
 gulp.task('default', ['webserver']);
+
+/**
+* Gulp task to run sass
+*
+* @usage
+*   $ gulp sass --gulpfile gulpfile.js
+*/
+
+var sass = require('gulp-sass');
+
+gulp.task('sass', function () {
+  return gulp.src('./assets/sass/**/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./assets/css'));
+});
+
+//gulp.task('sass:watch', function () {
+  //gulp.watch('./assets/sass/**/*.scss', ['sass']);
+//});
