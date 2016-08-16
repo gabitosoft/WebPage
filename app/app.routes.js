@@ -25,6 +25,9 @@ angular
       .when('/preview/:id', {
         templateUrl: 'app/components/form/viewForm.html'
       })
+      .when('/dashboard', {
+        templateUrl: 'app/components/dashboard/dashboard.html'
+      })
       .when('/login', {
         templateUrl: 'app/components/login/login.html'
       })

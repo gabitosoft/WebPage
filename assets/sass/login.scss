@@ -3,8 +3,7 @@ body {
   $login-input-color: #fff;
   $login-label-color: #465f77;
 
-  // background-color: $background;
-  .login {
+  .form-login {
     color: $login-label-color;
     background-color: $background;
     height: 100%;
@@ -17,5 +16,6 @@ body {
     color: $login-label-color;
     background-color: $background;
     font-size: 14px;
+    padding: 10px;
   }
 }

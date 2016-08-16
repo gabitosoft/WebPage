@@ -1,4 +1,4 @@
-<div layout-align="center center" layout="column" class="login" ng-controller="LoginCtrl">
+<div layout-align="center center" layout="column" class="form-login" ng-controller="LoginCtrl as login">
   <img src="assets/img/gabitosoft-blank.png" alt="logo"/>
   <h3>Welcome</h3>
   <md-input-container class="md-block">
@@ -15,5 +15,5 @@
       <div ng-message="required">This field is required.</div>
     </div>
   </md-input-container>
-  <md-button class="md-raised md-primary">Log In</md-button>
+  <md-button class="md-raised md-primary" ng-click="login.doLogin()">Log In</md-button>
 </div>

@@ -1,11 +1,12 @@
-body .login {
+body .form-login {
   color: #465f77;
   background-color: #22354C;
   height: 100%; }
-  body .login input {
+  body .form-login input {
     color: #fff; }
 
 body footer {
   color: #465f77;
   background-color: #22354C;
-  font-size: 14px; }
+  font-size: 14px;
+  padding: 10px; }
