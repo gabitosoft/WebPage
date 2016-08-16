@@ -4,3 +4,8 @@ body .login {
   height: 100%; }
   body .login input {
     color: #fff; }
+
+body footer {
+  color: #465f77;
+  background-color: #22354C;
+  font-size: 14px; }

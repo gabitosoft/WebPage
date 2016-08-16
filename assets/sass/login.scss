@@ -12,4 +12,10 @@ body {
       color: $login-input-color;
     }
   }
+
+  footer {
+    color: $login-label-color;
+    background-color: $background;
+    font-size: 14px;
+  }
 }
