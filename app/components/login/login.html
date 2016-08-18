@@ -1,19 +1,21 @@
 <div layout-align="center center" layout="column" class="form-login" ng-controller="LoginCtrl as login">
-  <img src="assets/img/gabitosoft-blank.png" alt="logo"/>
-  <h3>Welcome</h3>
-  <md-input-container class="md-block">
-    <label>Username</label>
-    <input required type="text" name="username" ng-model="login.username">
-    <div ng-messages="login.username.$error">
-      <div ng-message="required">This field is required.</div>
-    </div>
-  </md-input-container>
-  <md-input-container class="md-block">
-    <label>Password</label>
-    <input required type="password" name="password" ng-model="login.password">
-    <div ng-messages="login.password.$error">
-      <div ng-message="required">This field is required.</div>
-    </div>
-  </md-input-container>
-  <md-button class="md-raised md-primary" ng-click="login.doLogin()">Log In</md-button>
+  <form ng-submit="login.doLogin()">
+    <img src="assets/img/gabitosoft-blank.png" alt="logo"/>
+    <h3>Welcome</h3>
+    <md-input-container class="md-block">
+      <label>Username</label>
+      <input required type="text" name="username" ng-model="login.username">
+      <div ng-messages="login.username.$error">
+        <div ng-message="required">This field is required.</div>
+      </div>
+    </md-input-container>
+    <md-input-container class="md-block">
+      <label>Password</label>
+      <input required type="password" name="password" ng-model="login.password">
+      <div ng-messages="login.password.$error">
+        <div ng-message="required">This field is required.</div>
+      </div>
+    </md-input-container>
+    <md-button type="submit" class="md-raised md-primary">Log In</md-button>
+  </form>
 </div>

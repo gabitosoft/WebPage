@@ -1,18 +1,25 @@
-'use strict';
+(function () {
 
-/**
- * @ngdoc function
- * @name gabitosoft.controller:LoginCtrl
- * @description
- * # LoginCtrl
- * Controller of gabitosoft
- */
+  'use strict';
+  /**
+   * @ngdoc function
+   * @name gabitosoft.controller:LoginCtrl
+   * @description
+   * # LoginCtrl
+   * Controller of gabitosoft
+   */
 
-angular.module('gabitosoft')
-  .controller('LoginCtrl', function ($location) {
+  angular.module('gabitosoft').controller('LoginCtrl', LoginCtrl);
 
-    var doLogin = function () {
-      console.log('click event');
+  function LoginCtrl ($location) {
+    var self = this;
+    self.username = "";
+    self.password = "";
+
+    self.doLogin = doLogin;
+
+    function doLogin () {
       $location.path('/dashboard');
     }
-});
+  }
+})();
