@@ -1,0 +1,52 @@
+<md-toolbar ng-controller="ToolbarCtrl as toolbar" ng-init="toolbar.init()">
+  <div class="md-toolbar-tools">
+    <md-button ng-show="toolbar.mode == 'list'" aria-label="collapse" class="md-icon-button" ng-click="toolbar.collapseToolBar()">
+      <md-tooltip md-direction="down" md-visible="tooltipVisible">Menu</md-tooltip>
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </md-button>
+    <md-button ng-show="toolbar.mode !== 'list'" aria-label="back" class="md-icon-button" ng-click="back()">
+      <md-tooltip md-direction="down" md-visible="tooltipVisible">Back</md-tooltip>
+      <i class="fa fa-reply" aria-hidden="true"></i>
+    </md-button>
+    <span ng-show="toolbar.mode !== 'list'" flex=40></span>
+    <h2 ng-show="toolbar.mode !== 'list'">{{application.title}}</h2>
+    <span flex></span>
+    <div layout="row" class="animate-show" ng-show="toolbar.isVisible && toolbar.mode == 'edit'">
+      <md-button aria-label="save" class="md-icon-button" ng-click="preview()">
+        <md-tooltip md-direction="down" md-visible="tooltipVisible">Preview</md-tooltip>
+        <i class="fa fa-eye" aria-hidden="true"></i>
+      </md-button>
+      <md-button aria-label="save" class="md-icon-button" ng-click="cloneTab()">
+        <md-tooltip md-direction="down" md-visible="tooltipVisible">Save</md-tooltip>
+        <i class="fa fa-floppy-o" aria-hidden="true"></i>
+      </md-button>
+      <md-button aria-label="Clone" class="md-icon-button" ng-click="clone()">
+        <md-tooltip md-direction="down" md-visible="tooltipVisible">Clone</md-tooltip>
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </md-button>
+      <md-button aria-label="Delete" class="md-icon-button" ng-click="removeForm()">
+        <md-tooltip md-direction="down" md-visible="tooltipVisible">Remove</md-tooltip>
+        <i class="fa fa-trash" aria-hidden="true"></i>
+      </md-button>
+      <md-button aria-label="deploy" class="md-icon-button" ng-click="addControl('option')">
+        <md-tooltip md-direction="down" md-visible="tooltipVisible">Deploy</md-tooltip>
+        <i class="fa fa-cogs" aria-hidden="true"></i>
+      </md-button>
+      <md-divider class="vertical"></md-divider>
+      <md-button aria-label="zoom-in" class="md-icon-button" ng-click="showEmailDialog()">
+        <md-tooltip md-direction="down" md-visible="tooltipVisible">Zoom In</md-tooltip>
+        <i class="fa fa-search-plus" aria-hidden="true"></i>
+      </md-button>
+      <md-button aria-label="zoom-out" class="md-icon-button" ng-click="showEmailDialog()">
+        <md-tooltip md-direction="down" md-visible="tooltipVisible">Zoom Out</md-tooltip>
+        <i class="fa fa-search-minus" aria-hidden="true"></i>
+      </md-button>
+    </div>
+    <md-button ng-show="toolbar.mode == 'edit'" aria-label="collapse" class="md-icon-button" ng-click="collapseToolBar()">
+      <md-tooltip ng-if="!toolbar.isVisible" md-direction="down" md-visible="tooltipVisible">Expand</md-tooltip>
+      <md-tooltip ng-if="toolbar.isVisible" md-direction="down" md-visible="tooltipVisible">Collapse</md-tooltip>
+      <i ng-show="toolBarVisible" class="fa fa-angle-double-right" aria-hidden="true"></i>
+      <i ng-show="!toolBarVisible" class="fa fa-angle-double-left" aria-hidden="true"></i>
+    </md-button>
+  </div>
+</md-toolbar>

@@ -1,13 +1,16 @@
-'use strict';
+(function() {
 
-/**
- * @ngdoc overview
- * @name gabitosoft.com
- * @description
- * # WebPage
- *
- * Main module of the application.
- */
+  'use strict';
 
- var app = angular.module('gabitosoft', ['routesApp',
-    'ngMaterial', 'ngAnimate']);
+  /**
+   * @ngdoc overview
+   * @name gabitosoft.com
+   * @description
+   * # WebPage
+   *
+   * Main module of the application.
+   */
+
+   var app = angular.module('gabitosoft', ['routesApp',
+      'ngMaterial', 'ngAnimate', 'toolbar']);
+})();

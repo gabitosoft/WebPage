@@ -5,6 +5,10 @@ body .form-login {
   body .form-login input {
     color: #fff; }
 
+body .view-content {
+  background-color: #22354C;
+  height: 100%; }
+
 body footer {
   color: #465f77;
   background-color: #22354C;

@@ -1,0 +1,291 @@
+{
+    "applications": [
+        {
+            "id": "4cc3f034-4433-4050-b9bd-7690b4aba9fc",
+            "title": "CA Portal Profile",
+            "type": "application",
+            "properties": {},
+            "nodes": [
+                {
+                    "id": "4cc3f034-4433-4050-b9bd-7690b4aba9fd",
+                    "title": "Profile Information",
+                    "type": "form",
+                    "properties": {
+                        "progress": 100
+                    },
+                    "nodes": [
+                        {
+                            "id": "4cc3f034-4433-4050-b9bd-7690b4aba9fe",
+                            "orientation": "landscape",
+                            "type": "page",
+                            "properties": {},
+                            "nodes": [
+                                {
+                                    "id": "4cc3f034-4433-4050-b9bd-7690b4aba9ff",
+                                    "title": "Individual Profile",
+                                    "type": "subform",
+                                    "properties": {
+                                        "progress": 100
+                                    },
+                                    "nodes": [
+                                        {
+                                            "id": "4cc3f034-4433-4050-b9bd-7690b4aba9fg",
+                                            "title": "Personal Information",
+                                            "type": "section",
+                                            "properties": {
+                                                "progress": 100
+                                            },
+                                            "nodes": [
+                                                {
+                                                    "id": "4cc3f034-4433-4050-b9bd-7690b4aba9fk",
+                                                    "title": "Prefix",
+                                                    "type": "editfield",
+                                                    "properties": {
+                                                        "value": "",
+                                                        "helptext": "Prefix help",
+                                                        "sizeX": 1,
+                                                        "sizeY": 1,
+                                                        "row": 1,
+                                                        "col":0,
+                                                        "config": {
+                                                            "visible": true,
+                                                            "enabled": true,
+                                                            "required": true
+                                                        },
+                                                        "services": {
+                                                            "comments": true,
+                                                            "dms": true
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "id": "4cc3f034-4433-4050-b9bd-7690b4aba9fl",
+                                                    "title": "First name",
+                                                    "type": "editfield",
+                                                    "properties": {
+                                                        "value": "Sara",
+                                                        "helptext": "First name help",
+                                                        "sizeX": 1,
+                                                        "sizeY": 1,
+                                                        "row": 2,
+                                                        "col":0,
+                                                        "config": {
+                                                            "visible": true,
+                                                            "enabled": true,
+                                                            "required": true
+                                                        },
+                                                        "services": {
+                                                            "comments": true,
+                                                            "dms": true
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "id": "4cc3f034-4433-4050-b9bd-7690b4aba9fm",
+                                                    "title": "Middle name",
+                                                    "type": "editfield",
+                                                    "properties": {
+                                                        "value": "",
+                                                        "helptext": "Middle name help",
+                                                        "sizeX": 1,
+                                                        "sizeY": 1,
+                                                        "row": 1,
+                                                        "col":1,
+                                                        "config": {
+                                                            "visible": true,
+                                                            "enabled": true,
+                                                            "required": true
+                                                        },
+                                                        "services": {
+                                                            "comments": true,
+                                                            "dms": true
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "id": "4cc3f034-4433-4050-b9bd-7690b4aba9fn",
+                                                    "title": "Last name",
+                                                    "type": "editfield",
+                                                    "properties": {
+                                                        "value": "Evans",
+                                                        "helptext": "Last name help",
+                                                        "sizeX": 1,
+                                                        "sizeY": 1,
+                                                        "row": 4,
+                                                        "col":0,
+                                                        "config": {
+                                                            "visible": true,
+                                                            "enabled": true,
+                                                            "required": true
+                                                        },
+                                                        "services": {
+                                                            "comments": true,
+                                                            "dms": true
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "id": "4cc3f034-4433-4050-b9bd-7690b4aba9fo",
+                                                    "title": "Suffix",
+                                                    "type": "editfield",
+                                                    "properties": {
+                                                        "value": "",
+                                                        "helptext": "Suffix help",
+                                                        "sizeX": 1,
+                                                        "sizeY": 1,
+                                                        "row": 0,
+                                                        "col": 1,
+                                                        "config": {
+                                                            "visible": true,
+                                                            "enabled": true,
+                                                            "required": true
+                                                        },
+                                                        "services": {
+                                                            "comments": true,
+                                                            "dms": true
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "id": "4cc3f034-4433-4050-b9bd-7690b4aba9fp",
+                                                    "title": "Professional Title",
+                                                    "type": "editfield",
+                                                    "properties": {
+                                                        "value": "",
+                                                        "helptext": "Professional Title ....",
+                                                        "sizeX": 1,
+                                                        "sizeY": 1,
+                                                        "row": 2,
+                                                        "col":1,
+                                                        "config": {
+                                                            "visible": true,
+                                                            "enabled": true,
+                                                            "required": true
+                                                        },
+                                                        "services": {
+                                                            "comments": true,
+                                                            "dms": true
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                              ]
+                            },
+                            {
+                                "id": "4cc3ee34-4433-4050-b9bd-7690b4aba9fe",
+                                "orientation": "landscape",
+                                "type": "page",
+                                "nodes": [
+                                    {
+                                        "id": "4cc3f034-4433-4050-b9bd-7690b4aba9ff",
+                                        "title": "Individual Profile",
+                                        "type": "subform",
+                                        "progress": 100,
+                                        "nodes": [
+                                            {
+                                                "id": "7cc3f034-4433-4050-b9bd-7690b4aba9fg",
+                                                "title": "Personal Information",
+                                                "type": "section",
+                                                "progress": 100,
+                                                "nodes": [
+                                                    {
+                                                        "id": "4cc3f034-4433-4050-b9bd-7690b4aba9fr",
+                                                        "title": "Date of birth",
+                                                        "type": "editfield",
+                                                        "value": "**/10/****",
+                                                        "helptext": "Date of birth help",
+                                                        "sizeX": 1,
+                                                        "sizeY": 1,
+                                                        "row": 8,
+                                                        "col":0,
+                                                        "config": {
+                                                            "visible": true,
+                                                            "enabled": true,
+                                                            "required": true
+                                                        },
+                                                        "services": {
+                                                            "comments": true,
+                                                            "dms": true
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "4cc3f034-4433-4050-b9bd-7690b4aba9fs",
+                                                        "title": "Age",
+                                                        "type": "editfield",
+                                                        "properties": {
+                                                            "value": "**",
+                                                            "helptext": "Age help",
+                                                            "sizeX": 1,
+                                                            "sizeY": 1,
+                                                            "row": 9,
+                                                            "col":0,
+                                                            "config": {
+                                                                "visible": true,
+                                                                "enabled": true,
+                                                                "required": true
+                                                            },
+                                                            "services": {
+                                                                "comments": true,
+                                                                "dms": true
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "4cc3f034-4433-4050-b9bd-7690b4aba9ft",
+                                                        "title": "Email Address",
+                                                        "type": "editfield",
+                                                        "properties": {
+                                                            "value": "saraevans@mailnesia.com",
+                                                            "helptext": "Age help",
+                                                            "sizeX": 1,
+                                                            "sizeY": 1,
+                                                            "row": 10,
+                                                            "col":0,
+                                                            "config": {
+                                                                "visible": true,
+                                                                "enabled": true,
+                                                                "required": true
+                                                            },
+                                                            "services": {
+                                                                "comments": true,
+                                                                "dms": true
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "4cc3f034-4433-4050-b9bd-7690b4aba9fq",
+                                                        "title": "GENDER",
+                                                        "type": "editfield",
+                                                        "properties": {
+                                                            "value": "Female",
+                                                            "helptext": "Gender help",
+                                                            "sizeX": 1,
+                                                            "sizeY": 1,
+                                                            "row":7,
+                                                            "col":0,
+                                                            "config": {
+                                                                "visible": true,
+                                                                "enabled": true,
+                                                                "required": true
+                                                            },
+                                                            "services": {
+                                                                "comments": true,
+                                                                "dms": true
+                                                            }
+                                                        }
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+}

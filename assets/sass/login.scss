@@ -2,7 +2,6 @@ body {
   $background: #22354C;
   $login-input-color: #fff;
   $login-label-color: #465f77;
-
   .form-login {
     color: $login-label-color;
     background-color: $background;
@@ -10,6 +9,11 @@ body {
     input {
       color: $login-input-color;
     }
+  }
+
+  .view-content {
+    background-color: $background;
+    height: 100%;
   }
 
   footer {
