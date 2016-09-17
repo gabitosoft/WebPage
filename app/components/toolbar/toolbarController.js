@@ -16,18 +16,21 @@
     self.username = "";
     self.password = "";
 
-    function init() {
+    self.init = function() {
       // $scope.application = applicationFactory.getApplication('' + $routeParams.id);
       self.mode = $attrs.mode;
-      console.log(self.mode);
-    }
+    };
 
-    function back () {
+    self.back = function() {
       $location.path('/overview');
-    }
+    };
 
-    function signOut () {
+    self.signOut = function () {
       $location.path('/login');
-    }
+    };
+
+    self.openMenu = function($mdOpenMenu, ev) {
+      $mdOpenMenu(ev);
+    };
   }
 })();

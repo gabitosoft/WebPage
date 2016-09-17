@@ -18,8 +18,8 @@
         .when('/edit/:id', {
           templateUrl: 'app/components/form/editForm.html'
         })
-        .when('/overview', {
-          templateUrl: 'app/components/listForms/listForms.html'
+        .when('/form', {
+          templateUrl: 'app/components/form/form.html'
         })
         .when('/templates', {
           templateUrl: 'app/components/templatesView/templatesView.html'

@@ -12,5 +12,5 @@
    */
 
    var app = angular.module('gabitosoft', ['routesApp',
-      'ngMaterial', 'ngAnimate', 'toolbar']);
+      'ngMaterial', 'ngAnimate', 'toolbar', 'listForm']);
 })();

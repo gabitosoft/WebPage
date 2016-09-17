@@ -1,11 +1,11 @@
-var app = angular.module('toolbar', []);
+var app = angular.module('listForm', []);
 
-app.directive('toolbar', function() {
+app.directive('listForm', function() {
 
     return {
         $scope: {},
         restric: 'AE',
         replace: 'true',
-        templateUrl: 'app/components/toolbar/toolbar.html'
+        templateUrl: 'app/components/form/list.html'
     };
 });

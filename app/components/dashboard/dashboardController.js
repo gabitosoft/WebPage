@@ -11,13 +11,7 @@
 
   angular.module('gabitosoft').controller('DashCtrl', DashCtrl);
 
-  function DashCtrl ($location) {
+  function DashCtrl () {
     var self = this;
-    self.username = "";
-    self.password = "";
-
-    function goApp () {
-      $location.path('/dashboard');
-    }
   }
 })();

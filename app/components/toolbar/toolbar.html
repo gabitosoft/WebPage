@@ -1,9 +1,5 @@
-<md-toolbar ng-controller="ToolbarCtrl as toolbar" ng-init="toolbar.init()">
+<md-toolbar ng-controller="ToolbarCtrl as toolbar" ng-init="toolbar.init()" class="list-app">
   <div class="md-toolbar-tools">
-    <md-button ng-show="toolbar.mode == 'list'" aria-label="collapse" class="md-icon-button" ng-click="toolbar.collapseToolBar()">
-      <md-tooltip md-direction="down" md-visible="tooltipVisible">Menu</md-tooltip>
-      <i class="fa fa-bars" aria-hidden="true"></i>
-    </md-button>
     <md-button ng-show="toolbar.mode !== 'list'" aria-label="back" class="md-icon-button" ng-click="back()">
       <md-tooltip md-direction="down" md-visible="tooltipVisible">Back</md-tooltip>
       <i class="fa fa-reply" aria-hidden="true"></i>
@@ -11,6 +7,31 @@
     <span ng-show="toolbar.mode !== 'list'" flex=40></span>
     <h2 ng-show="toolbar.mode !== 'list'">{{application.title}}</h2>
     <span flex></span>
+    <md-menu md-position-mode="target-right target">
+      <md-button ng-show="toolbar.mode == 'list'" aria-label="collapse" class="md-icon-button"
+        ng-click="toolbar.openMenu($mdOpenMenu, $event)">
+        <md-tooltip md-direction="down" md-visible="tooltipVisible">Menu</md-tooltip>
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </md-button>
+      <md-menu-content width="3">
+        <md-menu-item>
+          <md-button>
+            <div layout="row" flex>
+              <p flex>Profile</p>
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </div>
+          </md-button>
+        </md-menu-item>
+        <md-menu-item>
+          <md-button ng-click="toolbar.signOut()">
+            <div layout="row" flex>
+              <p flex>Sign Out</p>
+              <i class="fa fa-sign-out" aria-hidden="true"></i>
+            </div>
+          </md-button>
+        </md-menu-item>
+      </md-menu-content>
+    </md-menu>
     <div layout="row" class="animate-show" ng-show="toolbar.isVisible && toolbar.mode == 'edit'">
       <md-button aria-label="save" class="md-icon-button" ng-click="preview()">
         <md-tooltip md-direction="down" md-visible="tooltipVisible">Preview</md-tooltip>

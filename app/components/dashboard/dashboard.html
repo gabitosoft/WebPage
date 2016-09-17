@@ -1,22 +1,3 @@
-<toolbar mode="list" class="list-app"></toolbar>
+<toolbar mode="list"></toolbar>
 
-<div layout="row" layout-align="center center" ng-controller="DashCtrl as dashboard">
-  <md-list flex=30 ng-init="dashboard.getApplications()">
-    <md-list-item>
-      <span flex></span>
-      <md-button aria-label="new" class="md-primary md-raised"  ng-click="goToTemplatesView()">Add New</md-button>
-    </md-list-item>
-    <md-divider></md-divider>
-    <md-list-item aria-label="item" ng-repeat="application in applications" ng-click="dashboard.edit(application.id)">
-      <md-button aria-label="application" class="md-primary md-icon-button" ng-click="dashboard.collapseToolBar()">
-        <i class="fa fa-th-list" aria-hidden="true"></i>
-      </md-button>
-      <p> {{ application.title }} </p>
-      <md-checkbox aria-label="select" class="md-primary" ng-model="topping.wanted"></md-checkbox>
-      <md-button aria-label="collapse" class="md-primary md-icon-button" ng-click="dashboard.collapseToolBar()">
-        <md-tooltip md-direction="down" md-visible="tooltipVisible">Menu</md-tooltip>
-        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-      </md-button>
-    </md-list-item>
-  </md-list>
-</div>
+<div layout="row" layout-align="center center" ng-controller="DashCtrl as dash"></div>

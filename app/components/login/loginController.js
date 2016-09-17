@@ -19,7 +19,7 @@
     self.doLogin = doLogin;
 
     function doLogin () {
-      $location.path('/dashboard');
+      $location.path('/form');
     }
   }
 })();

@@ -1,0 +1,254 @@
+{
+    "nodes": [{
+        "id": "4cc3f034-4433-4050-b9bd-7690b4aba9fc",
+        "type": "application",
+        "properties": {
+          "title": "CA Portal Profile"
+        },
+        "nodes": [{
+          "id": "4cc3f034-4433-4050-b9bd-7690b4aba9fd",
+          "type": "form",
+          "properties": {
+            "title": "Profile Information",
+            "progress": 100
+          },
+          "nodes": [{
+            "id": "4cc3f034-4433-4050-b9bd-7690b4aba9fe",
+            "type": "page",
+            "properties": {
+              "orientation": "landscape"
+            },
+            "nodes": [{
+              "id": "4cc3f034-4433-4050-b9bd-7690b4aba9ff",
+              "type": "subform",
+              "properties": {
+                "title": "Individual Profile",
+                "progress": 100
+              },
+              "nodes": [{
+                "id": "4cc3f034-4433-4050-b9bd-7690b4aba9fg",
+                "type": "section",
+                "properties": {
+                  "title": "Personal Information",
+                  "progress": 100
+                },
+                "nodes": [{
+                  "id": "4cc3f034-4433-4050-b9bd-7690b4aba9fk",
+                  "type": "editfield",
+                  "properties": {
+                    "title": "Prefix",
+                    "value": "",
+                    "helptext": "Prefix help",
+                    "sizeX": 1,
+                    "sizeY": 1,
+                    "row": 1,
+                    "col": 0,
+                    "visible": true,
+                    "enabled": true,
+                    "required": true
+                  },
+                  "services": {
+                    "comments": true,
+                    "dms": true
+                  }
+                }, {
+                  "id": "4cc3f034-4433-4050-b9bd-7690b4aba9fl",
+                  "type": "editfield",
+                  "properties": {
+                    "title": "First name",
+                    "value": "Sara",
+                    "helptext": "First name help",
+                    "sizeX": 1,
+                    "sizeY": 1,
+                    "row": 2,
+                    "col": 0,
+                    "visible": true,
+                    "enabled": true,
+                    "required": true
+                  },
+                  "services": {
+                    "comments": true,
+                    "dms": true
+                  }
+                }, {
+                  "id": "4cc3f034-4433-4050-b9bd-7690b4aba9fm",
+                  "type": "editfield",
+                  "properties": {
+                    "title": "Middle name",
+                    "value": "",
+                    "helptext": "Middle name help",
+                    "sizeX": 1,
+                    "sizeY": 1,
+                    "row": 1,
+                    "col": 1,
+                    "visible": true,
+                    "enabled": true,
+                    "required": true
+                  },
+                  "services": {
+                    "comments": true,
+                    "dms": true
+                  }
+                }, {
+                  "id": "4cc3f034-4433-4050-b9bd-7690b4aba9fn",
+                  "type": "editfield",
+                  "properties": {
+                    "title": "Last name",
+                    "value": "Evans",
+                    "helptext": "Last name help",
+                    "sizeX": 1,
+                    "sizeY": 1,
+                    "row": 4,
+                    "col": 0,
+                    "visible": true,
+                    "enabled": true,
+                    "required": true
+                  },
+                  "services": {
+                    "comments": true,
+                    "dms": true
+                  }
+                }, {
+                  "id": "4cc3f034-4433-4050-b9bd-7690b4aba9fo",
+                  "type": "editfield",
+                  "properties": {
+                    "value": "",
+                    "helptext": "Suffix help",
+                    "title": "Suffix",
+                    "sizeX": 1,
+                    "sizeY": 1,
+                    "row": 0,
+                    "col": 1,
+                    "visible": true,
+                    "enabled": true,
+                    "required": true
+                  },
+                  "services": {
+                    "comments": true,
+                    "dms": true
+                  }
+                }, {
+                  "id": "4cc3f034-4433-4050-b9bd-7690b4aba9fp",
+                  "title": "Professional Title",
+                  "type": "editfield",
+                  "properties": {
+                    "value": "",
+                    "helptext": "Professional Title ....",
+                    "sizeX": 1,
+                    "sizeY": 1,
+                    "row": 2,
+                    "col": 1,
+                    "visible": true,
+                    "enabled": true,
+                    "required": true
+                  },
+                  "services": {
+                    "comments": true,
+                    "dms": true
+                  }
+                }]
+              }]
+            }]
+          }, {
+            "id": "4cc3ee34-4433-4050-b9bd-7690b4aba9fe",
+            "properties": {
+              "orientation": "landscape"
+            },
+            "type": "page",
+            "nodes": [{
+              "id": "4cc3f034-4433-4050-b9bd-7690b4aba9ff",
+              "type": "subform",
+              "properties": {
+                "title": "Individual Profile",
+                "progress": 100
+              },
+              "nodes": [{
+                "id": "7cc3f034-4433-4050-b9bd-7690b4aba9fg",
+                "type": "section",
+                "properties": {
+                  "title": "Personal Information",
+                  "progress": 100
+                },
+                "nodes": [{
+                  "id": "4cc3f034-4433-4050-b9bd-7690b4aba9fr",
+                  "type": "editfield",
+                  "properties": {
+                    "title": "Date of birth",
+                    "value": "**/10/****",
+                    "helptext": "Date of birth help",
+                    "sizeX": 1,
+                    "sizeY": 1,
+                    "row": 8,
+                    "col": 0,
+                    "visible": true,
+                    "enabled": true,
+                    "required": true
+                  },
+                  "services": {
+                    "comments": true,
+                    "dms": true
+                  }
+                }, {
+                  "id": "4cc3f034-4433-4050-b9bd-7690b4aba9fs",
+                  "title": "Age",
+                  "type": "editfield",
+                  "properties": {
+                    "value": "**",
+                    "helptext": "Age help",
+                    "sizeX": 1,
+                    "sizeY": 1,
+                    "row": 9,
+                    "col": 0,
+                    "visible": true,
+                    "enabled": true,
+                    "required": true
+                  },
+                  "services": {
+                    "comments": true,
+                    "dms": true
+                  }
+                }, {
+                  "id": "4cc3f034-4433-4050-b9bd-7690b4aba9ft",
+                  "title": "Email Address",
+                  "type": "editfield",
+                  "properties": {
+                    "value": "saraevans@mailnesia.com",
+                    "helptext": "Age help",
+                    "sizeX": 1,
+                    "sizeY": 1,
+                    "row": 10,
+                    "col": 0,
+                    "visible": true,
+                    "enabled": true,
+                    "required": true
+                  },
+                  "services": {
+                    "comments": true,
+                    "dms": true
+                  }
+                }, {
+                  "id": "4cc3f034-4433-4050-b9bd-7690b4aba9fq",
+                  "title": "GENDER",
+                  "type": "editfield",
+                  "properties": {
+                    "value": "Female",
+                    "helptext": "Gender help",
+                    "sizeX": 1,
+                    "sizeY": 1,
+                    "row": 7,
+                    "col": 0,
+                    "visible": true,
+                    "enabled": true,
+                    "required": true
+                  },
+                  "services": {
+                    "comments": true,
+                    "dms": true
+                  }
+              }]
+            }]
+          }]
+        }]
+    }]
+  }]
+}

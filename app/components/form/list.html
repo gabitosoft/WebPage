@@ -1,0 +1,35 @@
+<div layout="row">
+  <md-list flex=30 layout-align="center center">
+    <md-list-item aria-label="item" ng-repeat="item in form.forms" ng-click="form.edit(item.id)">
+      <md-button aria-label="application" class="md-primary md-icon-button">
+        <i class="fa fa-th-list" aria-hidden="true"></i>
+      </md-button>
+      <p> {{ item.properties.title }} </p>
+      <md-menu md-position-mode="target-left target">
+        <md-button aria-label="collapse" class="md-icon-button"
+          ng-click="form.openMenu($mdOpenMenu, $event)">
+          <md-tooltip md-direction="down" md-visible="tooltipVisible">Menu</md-tooltip>
+          <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+        </md-button>
+        <md-menu-content width="3">
+          <md-menu-item>
+            <md-button ng-click="form.share(item.id)">
+              <div layout="row" flex>
+                <p flex>Share</p>
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+              </div>
+            </md-button>
+          </md-menu-item>
+          <md-menu-item>
+            <md-button ng-click="form.delete(item.id)"class="md-warn">
+              <div layout="row" flex>
+                <p flex>Delete</p>
+                <i class="fa fa-trash" aria-hidden="true"></i>
+              </div>
+            </md-button>
+          </md-menu-item>
+        </md-menu-content>
+      </md-menu>
+    </md-list-item>
+  </md-list>
+</div>

@@ -1,0 +1,11 @@
+<toolbar mode="list"></toolbar>
+<div layout="column" flex ng-controller="FormCtrl as form" ng-init="form.getForms()" flex>
+  <list-form></list-form>
+  <div layout="row">
+    <span flex></span>
+    <md-button layout-align="end end" aria-label="new" class="md-fab md-primary">
+      <i class="fa fa-plus" aria-hidden="true"></i>
+      <md-tooltip md-direction="top" md-visible="tooltipVisible">New Form</md-tooltip>
+    </md-button>
+  </div>
+</div>
